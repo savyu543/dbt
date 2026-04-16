@@ -1,0 +1,12 @@
+jaffle_shop_2:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: RWNQBFJ-KZ74401  # Remove .snowflakecomputing.com
+      user: savyanth865
+      password: [KARRRyMtfHtCyA8]
+      database: dbt_test
+      warehouse: compute_wh
+      schema: dbt_schema
+      threads: 4

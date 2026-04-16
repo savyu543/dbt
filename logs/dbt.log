@@ -1,0 +1,208 @@
+==================== 2026-04-13T09:10:59.376204Z | 019d861b-c229-7bc0-a00e-83a82ad459df ====================
+09:10:59.376499 [info ]: Installing dbt project and profile setup
+09:10:59.456114 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+09:10:59.457065 [info ]: Success Project created successfully!
+09:10:59.457673 [info ]: Info Project name: jaffle_shop
+09:10:59.458113 [info ]: Info Project directory: jaffle_shop
+09:10:59.458557 [info ]: Info Setting up your profile...
+09:10:59.459169 [info ]: Info Creating new profile...
+09:11:05.122779 [info ]: No dbt_cloud.yml found - proceeding without cloud pre-population
+{"data":{"log_version":3,"version":"=2.0.0-preview.170"},"info":{"category":"","code":"A001","extra":{},"invocation_id":"019d8624-45cd-7db2-9a1d-254ca2fe25e4","level":"info","msg":"Running with dbt-fusion=2.0.0-preview.170","name":"MainReportVersion","pid":32144,"thread":"tokio-rt-worker","ts":"2026-04-13T09:20:17.409933Z"}}
+{"data":{"args":{"debug":"false","invocation_command":"C:\\Users\\vanch\\.local\\bin\\dbt.exe license info --json --log-format json","log_format":"json","quiet":"false","write_json":"true"}},"info":{"category":"","code":"A002","extra":{},"invocation_id":"019d8624-45cd-7db2-9a1d-254ca2fe25e4","level":"debug","msg":"running dbt-fusion with argumets {\"command\":\"license\",\"vars\":\"{}\",\"limit\":\"10\",\"debug\":false,\"log_format\":\"json\",\"quiet\":false,\"write_json\":true,\"write_catalog\":false}","name":"MainReportArgs","pid":32144,"thread":"tokio-rt-worker","ts":"2026-04-13T09:20:17.409970Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"019d8624-45cd-7db2-9a1d-254ca2fe25e4","level":"debug","msg":"No active cloud project configured, skipping remote license","name":"Generic","pid":32144,"thread":"tokio-rt-worker","ts":"2026-04-13T09:20:17.429696Z"}}
+{"data":{"columns":[],"is_inline":true,"node_name":"license_info","output_format":"json","preview":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","unique_id":"license.info"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"019d8624-45cd-7db2-9a1d-254ca2fe25e4","level":"info","msg":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","name":"ShowNode","pid":32144,"thread":"tokio-rt-worker","ts":"2026-04-13T09:20:17.432433Z"}}
+{"data":{"completed_at":"2026-04-13T09:20:19.098587Z","elapsed":1.695448875427246,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"019d8624-45cd-7db2-9a1d-254ca2fe25e4","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'license' successfully [1.7s]","name":"CommandCompleted","pid":32144,"thread":"tokio-rt-worker","ts":"2026-04-13T09:20:19.103840Z"}}
+09:20:54.008063 [info ]: Success Profile written to C:\Users\vanch\.dbt\profiles.yml
+09:20:54.012354 [info ]: Validating profile inputs, adapters, and connection
+
+09:20:54.013139 [info ]: dbt-fusion 2.0.0-preview.170
+09:20:54.021458 [info ]: Started loading project
+09:20:54.078925 [info ]: Loading ~/.dbt/profiles.yml
+09:20:54.103233 [info ]: Finished loading project [  0.08s]
+09:20:54.108133 [info ]: Started debugging
+09:20:54.108646 [info ]: Debugging profile: dev
+09:20:54.109075 [info ]: Debugging dbt version: 2.0.0-preview.170
+09:20:54.109518 [info ]: Debugging platform: windows x86_64 (windows)
+09:20:54.110687 [info ]: Debugging adapter type: snowflake (remote)
+09:20:54.179801 [info ]: Debugging dependencies:
+  git: OK
+09:20:54.186407 [info ]: Debugging connection:
+  "account": "RWNQBFJ-KZ74401",
+  "user": "savyanth865",
+  "database": "DBT_TEST",
+  "warehouse": "COMPUTE_WH",
+  "schema": "DBT_SCHEMA"
+09:21:06.672105 [info ]: Finished debugging [ 12.56s]
+09:21:06.672546 [error]: dbt1011: dbt was unable to connect to the specified database.
+The following error was returned:
+
+[Snowflake] 390100 (08004): Incorrect username or password was specified.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/core/connect-data-platform/connection-profiles
+09:21:08.589473 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' with 1 error for target 'dev' [10m 9s]
+==================== 2026-04-13T09:21:19.858132Z | 019d8625-39ee-7322-8443-27d5d70162d8 ====================
+09:21:19.858476 [info ]: Installing dbt project and profile setup
+09:21:19.862399 [info ]: Warning Directory 'jaffle_shop' already exists, using 'jaffle_shop_1' instead
+09:21:19.918154 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+09:21:19.918878 [info ]: Success Project created successfully!
+09:21:19.919305 [info ]: Info Project name: jaffle_shop_1
+09:21:19.919683 [info ]: Info Project directory: jaffle_shop_1
+09:21:19.920088 [info ]: Info Setting up your profile...
+09:21:19.921335 [info ]: Loading ~/.dbt/profiles.yml
+09:21:19.922397 [info ]: Info Creating new profile...
+09:21:26.328216 [info ]: No dbt_cloud.yml found - proceeding without cloud pre-population
+==================== 2026-04-13T10:42:04.692393Z | 019d866f-26ea-7261-9ded-3bd081585dfb ====================
+10:42:04.700158 [info ]: Installing dbt project and profile setup
+10:42:04.711489 [info ]: Warning Directory 'jaffle_shop' already exists, using 'jaffle_shop_2' instead
+10:42:04.781243 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+10:42:04.784231 [info ]: Success Project created successfully!
+10:42:04.784593 [info ]: Info Project name: jaffle_shop_2
+10:42:04.784822 [info ]: Info Project directory: jaffle_shop_2
+10:42:04.785703 [info ]: Info Setting up your profile...
+10:42:04.794657 [info ]: Loading ~/.dbt/profiles.yml
+10:42:04.824769 [info ]: Info Creating new profile...
+10:42:10.377641 [info ]: No dbt_cloud.yml found - proceeding without cloud pre-population
+10:45:47.584184 [info ]: Success Profile written to C:\Users\vanch\.dbt\profiles.yml
+10:45:47.586058 [info ]: Validating profile inputs, adapters, and connection
+
+10:45:47.587355 [info ]: dbt-fusion 2.0.0-preview.170
+10:45:47.595748 [info ]: Started loading project
+10:45:47.653119 [info ]: Loading ~/.dbt/profiles.yml
+10:45:47.678718 [info ]: Finished loading project [  0.08s]
+10:45:47.686753 [info ]: Started debugging
+10:45:47.687315 [info ]: Debugging profile: dev
+10:45:47.687509 [info ]: Debugging dbt version: 2.0.0-preview.170
+10:45:47.687940 [info ]: Debugging platform: windows x86_64 (windows)
+10:45:47.688871 [info ]: Debugging adapter type: snowflake (remote)
+10:45:47.784265 [info ]: Debugging dependencies:
+  git: OK
+10:45:47.789310 [info ]: Debugging connection:
+  "account": "RWNQBFJ-KZ74401.snowflakecomputing.com",
+  "user": "savyanth865",
+  "database": "dbt_test",
+  "warehouse": "compute_wh",
+  "schema": "dbt_schema"
+10:46:03.784163 [info ]: Finished debugging [ 16.10s]
+10:46:03.788269 [error]: dbt1011: dbt was unable to connect to the specified database.
+The following error was returned:
+
+Post "https://RWNQBFJ-KZ74401.snowflakecomputing.com.snowflakecomputing.com:443/session/v1/login-request?databaseName=dbt_test&requestId=f9eda6d8-b362-449d-4bb8-8513b1b9da92&request_guid=5bd1a6f9-6b63-4119-72a0-e5181caa9670&schemaName=dbt_schema&warehouse=compute_wh": tls: failed to verify certificate: x509: certificate is valid for *.prod3.us-west-2.aws.snowflakecomputing.com, *.global.privatelink.snowflakecomputing.com, *.global.snowflakecomputing.com, *.ingest.pdxaaj.privatelink.snowflakecomputing.com, *.ingest.pdxaaj.snowflakecomputing.com, *.opencatalog.pdxaaj.privatelink.snowflakecomputing.com, *.opencatalog.pdxaaj.snowflakecomputing.com, *.openflow.pdxaaj.privatelink.snowflakecomputing.com, *.openflow.pdxaaj.snowflakecomputing.com, *.pdxaaj.privatelink.snowflakecomputing.com, *.privatelink.snowflakecomputing.com, *.prod3.privatelink.snowflake.app, *.prod3.snowflake.app, *.prod3.us-west-2.privatelink.snowflakecomputing.com, *.prod3.us-west-2.snowflakecomputing.com, *.registry.privatelink.snowflakecomputing.com, *.sis.pdxaaj.privatelink.snowflake.app, *.snowflakecomputing.com, *.snowpark.pdxaaj.privatelink.snowflakecomputing.com, *.snowpark.pdxaaj.snowflakecomputing.com, *.spcs.pdxaaj.privatelink.snowflake.app, *.telemetry.pdxaaj.privatelink.snowflakecomputing.com, *.telemetry.pdxaaj.snowflakecomputing.com, *.unused.snowflakecomputing.com, *.us-west-2.aws.privatelink.snowflakecomputing.com, *.us-west-2.aws.snowflakecomputing.com, *.us-west-2.privatelink.snowflakecomputing.com, *.us-west-2.snowflakecomputing.com, global.privatelink.snowflakecomputing.com, global.snowflakecomputing.com, ingest.pdxaaj.privatelink.snowflakecomputing.com, ingest.pdxaaj.snowflakecomputing.com, opencatalog.pdxaaj.privatelink.snowflakecomputing.com, opencatalog.pdxaaj.snowflakecomputing.com, openflow.pdxaaj.privatelink.snowflakecomputing.com, openflow.pdxaaj.snowflakecomputing.com, pdxaaj.privatelink.snowflakecomputing.com, privatelink.snowflakecomputing.com, prod3.privatelink.snowflake.app, prod3.snowflake.app, prod3.us-west-2.aws.snowflakecomputing.com, prod3.us-west-2.privatelink.snowflakecomputing.com, prod3.us-west-2.snowflakecomputing.com, registry.privatelink.snowflakecomputing.com, sis.pdxaaj.privatelink.snowflake.app, snowflakecomputing.com, snowpark.pdxaaj.privatelink.snowflakecomputing.com, snowpark.pdxaaj.snowflakecomputing.com, spcs.pdxaaj.privatelink.snowflake.app, telemetry.pdxaaj.privatelink.snowflakecomputing.com, telemetry.pdxaaj.snowflakecomputing.com, unused.snowflakecomputing.com, us-west-2.aws.privatelink.snowflakecomputing.com, us-west-2.aws.snowflakecomputing.com, us-west-2.privatelink.snowflakecomputing.com, us-west-2.snowflakecomputing.com, not RWNQBFJ-KZ74401.snowflakecomputing.com.snowflakecomputing.com
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/core/connect-data-platform/connection-profiles
+10:46:04.771601 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' with 1 error for target 'dev' [4m]
+==================== 2026-04-13T10:50:29.974197Z | 019d8676-dcd3-7190-9e57-f2858d0bdffd ====================
+10:50:29.974468 [info ]: Installing dbt project and profile setup
+10:50:29.978146 [info ]: Warning Directory 'jaffle_shop' already exists, using 'jaffle_shop_3' instead
+10:50:30.024858 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+10:50:30.026151 [info ]: Success Project created successfully!
+10:50:30.026585 [info ]: Info Project name: jaffle_shop_3
+10:50:30.026903 [info ]: Info Project directory: jaffle_shop_3
+10:50:30.027192 [info ]: Info Setting up your profile...
+10:50:30.028204 [info ]: Loading ~/.dbt/profiles.yml
+10:50:30.029301 [info ]: Info Creating new profile...
+10:50:31.651782 [info ]: No dbt_cloud.yml found - proceeding without cloud pre-population
+10:51:25.544571 [info ]: Success Profile written to C:\Users\vanch\.dbt\profiles.yml
+10:51:25.545033 [info ]: Validating profile inputs, adapters, and connection
+
+10:51:25.545341 [info ]: dbt-fusion 2.0.0-preview.170
+10:51:25.546065 [info ]: Started loading project
+10:51:25.547944 [info ]: Loading ~/.dbt/profiles.yml
+10:51:25.558068 [info ]: Finished loading project [  0.01s]
+10:51:25.558425 [info ]: Started debugging
+10:51:25.558603 [info ]: Debugging profile: dev
+10:51:25.558931 [info ]: Debugging dbt version: 2.0.0-preview.170
+10:51:25.559261 [info ]: Debugging platform: windows x86_64 (windows)
+10:51:25.559552 [info ]: Debugging adapter type: snowflake (remote)
+10:51:25.605321 [info ]: Debugging dependencies:
+  git: OK
+10:51:25.606017 [info ]: Debugging connection:
+  "account": "RWNQBFJ-KZ74401",
+  "user": "savyanth865",
+  "database": "dbt_test",
+  "warehouse": "compute_wh",
+  "schema": "dbt_schema",
+  "role": "sysadmin"
+10:51:26.688689 [info ]: Finished debugging [  1.13s]
+10:51:26.689116 [error]: dbt1011: dbt was unable to connect to the specified database.
+The following error was returned:
+
+[Snowflake] 390100 (08004): Incorrect username or password was specified.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/core/connect-data-platform/connection-profiles
+10:51:27.587032 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' with 1 error for target 'dev' [57.6s]
+==================== 2026-04-13T10:51:45.985590Z | 019d8678-05be-7a41-8c8b-34688318ed28 ====================
+10:51:45.985877 [info ]: Installing dbt project and profile setup
+10:51:45.989473 [info ]: Warning Directory 'jaffle_shop' already exists, using 'jaffle_shop_4' instead
+10:51:46.026410 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+10:51:46.027062 [info ]: Success Project created successfully!
+10:51:46.027525 [info ]: Info Project name: jaffle_shop_4
+10:51:46.027832 [info ]: Info Project directory: jaffle_shop_4
+10:51:46.028238 [info ]: Info Setting up your profile...
+10:51:46.029276 [info ]: Loading ~/.dbt/profiles.yml
+10:51:46.030410 [info ]: Info Creating new profile...
+10:51:48.352727 [info ]: No dbt_cloud.yml found - proceeding without cloud pre-population
+10:54:26.756863 [info ]: Success Profile written to C:\Users\vanch\.dbt\profiles.yml
+10:54:26.757354 [info ]: Validating profile inputs, adapters, and connection
+
+10:54:26.757670 [info ]: dbt-fusion 2.0.0-preview.170
+10:54:26.758241 [info ]: Started loading project
+10:54:26.760082 [info ]: Loading ~/.dbt/profiles.yml
+10:54:26.770645 [info ]: Finished loading project [  0.01s]
+10:54:26.770843 [info ]: Started debugging
+10:54:26.770994 [info ]: Debugging profile: dev
+10:54:26.771195 [info ]: Debugging dbt version: 2.0.0-preview.170
+10:54:26.771355 [info ]: Debugging platform: windows x86_64 (windows)
+10:54:26.771546 [info ]: Debugging adapter type: snowflake (remote)
+10:54:26.818969 [info ]: Debugging dependencies:
+  git: OK
+10:54:26.819462 [info ]: Debugging connection:
+  "account": "RWNQBFJ-KZ74401",
+  "user": "savyanth865",
+  "database": "dbt_test",
+  "warehouse": "compute_wh",
+  "schema": "dbt_schema"
+10:54:27.363226 [info ]: Finished debugging [  0.59s]
+10:54:27.363648 [error]: dbt1011: dbt was unable to connect to the specified database.
+The following error was returned:
+
+[Snowflake] 390100 (08004): Incorrect username or password was specified.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/core/connect-data-platform/connection-profiles
+10:54:28.624067 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' with 1 error for target 'dev' [2m 43s]
+{"data":{"log_version":3,"version":"=2.0.0-preview.170"},"info":{"category":"","code":"A001","extra":{},"invocation_id":"019d8687-1b0c-7e93-8a73-cde94836f7bc","level":"info","msg":"Running with dbt-fusion=2.0.0-preview.170","name":"MainReportVersion","pid":31232,"thread":"tokio-rt-worker","ts":"2026-04-13T11:08:14.533551Z"}}
+{"data":{"args":{"debug":"false","invocation_command":"C:\\Users\\vanch\\.local\\bin\\dbt.exe license info --json --log-format json","log_format":"json","quiet":"false","write_json":"true"}},"info":{"category":"","code":"A002","extra":{},"invocation_id":"019d8687-1b0c-7e93-8a73-cde94836f7bc","level":"debug","msg":"running dbt-fusion with argumets {\"command\":\"license\",\"vars\":\"{}\",\"limit\":\"10\",\"debug\":false,\"log_format\":\"json\",\"quiet\":false,\"write_json\":true,\"write_catalog\":false}","name":"MainReportArgs","pid":31232,"thread":"tokio-rt-worker","ts":"2026-04-13T11:08:14.533877Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"019d8687-1b0c-7e93-8a73-cde94836f7bc","level":"debug","msg":"No active cloud project configured, skipping remote license","name":"Generic","pid":31232,"thread":"tokio-rt-worker","ts":"2026-04-13T11:08:14.548853Z"}}
+{"data":{"columns":[],"is_inline":true,"node_name":"license_info","output_format":"json","preview":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","unique_id":"license.info"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"019d8687-1b0c-7e93-8a73-cde94836f7bc","level":"info","msg":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","name":"ShowNode","pid":31232,"thread":"tokio-rt-worker","ts":"2026-04-13T11:08:14.551753Z"}}
+{"data":{"completed_at":"2026-04-13T11:08:17.081966Z","elapsed":2.553719997406006,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"019d8687-1b0c-7e93-8a73-cde94836f7bc","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'license' successfully [2.6s]","name":"CommandCompleted","pid":31232,"thread":"tokio-rt-worker","ts":"2026-04-13T11:08:17.089529Z"}}
+==================== 2026-04-13T16:53:00.788625Z | 019d87c2-c0b3-7fe2-b86e-43b5243c9128 ====================
+16:53:00.801299 [info ]: Installing dbt project and profile setup
+16:53:00.820190 [info ]: Warning Directory 'jaffle_shop' already exists, using 'jaffle_shop_5' instead
+16:53:00.952794 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+16:53:00.957122 [info ]: Success Project created successfully!
+16:53:00.957699 [info ]: Info Project name: jaffle_shop_5
+16:53:00.958376 [info ]: Info Project directory: jaffle_shop_5
+16:53:00.959693 [info ]: Info Setting up your profile...
+16:53:00.972565 [info ]: Loading ~/.dbt/profiles.yml
+16:53:01.024593 [info ]: Info Creating new profile...
+{"data":{"log_version":3,"version":"=2.0.0-preview.170"},"info":{"category":"","code":"A001","extra":{},"invocation_id":"019d8ab0-a70d-74a1-90ae-962ec9fffc4d","level":"info","msg":"Running with dbt-fusion=2.0.0-preview.170","name":"MainReportVersion","pid":37876,"thread":"tokio-rt-worker","ts":"2026-04-14T06:32:06.204993Z"}}
+{"data":{"args":{"debug":"false","invocation_command":"C:\\Users\\vanch\\.local\\bin\\dbt.exe license info --json --log-format json","log_format":"json","quiet":"false","write_json":"true"}},"info":{"category":"","code":"A002","extra":{},"invocation_id":"019d8ab0-a70d-74a1-90ae-962ec9fffc4d","level":"debug","msg":"running dbt-fusion with argumets {\"command\":\"license\",\"vars\":\"{}\",\"limit\":\"10\",\"debug\":false,\"log_format\":\"json\",\"quiet\":false,\"write_json\":true,\"write_catalog\":false}","name":"MainReportArgs","pid":37876,"thread":"tokio-rt-worker","ts":"2026-04-14T06:32:06.205223Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"019d8ab0-a70d-74a1-90ae-962ec9fffc4d","level":"debug","msg":"No active cloud project configured, skipping remote license","name":"Generic","pid":37876,"thread":"tokio-rt-worker","ts":"2026-04-14T06:32:06.219075Z"}}
+{"data":{"columns":[],"is_inline":true,"node_name":"license_info","output_format":"json","preview":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","unique_id":"license.info"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"019d8ab0-a70d-74a1-90ae-962ec9fffc4d","level":"info","msg":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","name":"ShowNode","pid":37876,"thread":"tokio-rt-worker","ts":"2026-04-14T06:32:06.221524Z"}}
+{"data":{"completed_at":"2026-04-14T06:32:07.524297Z","elapsed":1.3233118057250977,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"019d8ab0-a70d-74a1-90ae-962ec9fffc4d","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'license' successfully [1.3s]","name":"CommandCompleted","pid":37876,"thread":"tokio-rt-worker","ts":"2026-04-14T06:32:07.527778Z"}}
+{"data":{"log_version":3,"version":"=2.0.0-preview.170"},"info":{"category":"","code":"A001","extra":{},"invocation_id":"019d8fca-54af-7821-b97d-b976c9c3891e","level":"info","msg":"Running with dbt-fusion=2.0.0-preview.170","name":"MainReportVersion","pid":31416,"thread":"tokio-rt-worker","ts":"2026-04-15T06:18:15.137367Z"}}
+{"data":{"args":{"debug":"false","invocation_command":"C:\\Users\\vanch\\.local\\bin\\dbt.exe license info --json --log-format json","log_format":"json","quiet":"false","write_json":"true"}},"info":{"category":"","code":"A002","extra":{},"invocation_id":"019d8fca-54af-7821-b97d-b976c9c3891e","level":"debug","msg":"running dbt-fusion with argumets {\"command\":\"license\",\"vars\":\"{}\",\"limit\":\"10\",\"debug\":false,\"log_format\":\"json\",\"quiet\":false,\"write_json\":true,\"write_catalog\":false}","name":"MainReportArgs","pid":31416,"thread":"tokio-rt-worker","ts":"2026-04-15T06:18:15.137402Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"019d8fca-54af-7821-b97d-b976c9c3891e","level":"debug","msg":"No active cloud project configured, skipping remote license","name":"Generic","pid":31416,"thread":"tokio-rt-worker","ts":"2026-04-15T06:18:15.150662Z"}}
+{"data":{"columns":[],"is_inline":true,"node_name":"license_info","output_format":"json","preview":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","unique_id":"license.info"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"019d8fca-54af-7821-b97d-b976c9c3891e","level":"info","msg":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","name":"ShowNode","pid":31416,"thread":"tokio-rt-worker","ts":"2026-04-15T06:18:15.153516Z"}}
+{"data":{"completed_at":"2026-04-15T06:18:16.243609Z","elapsed":1.1099705696105957,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"019d8fca-54af-7821-b97d-b976c9c3891e","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'license' successfully [1.1s]","name":"CommandCompleted","pid":31416,"thread":"tokio-rt-worker","ts":"2026-04-15T06:18:16.247775Z"}}
