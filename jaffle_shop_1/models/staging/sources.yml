@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: raw
+    database: DEMO1
+    schema: RAW
+
+    tables:
+      - name: customers
+      - name: loans
+      - name: repayments
+      - name: products

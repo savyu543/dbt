@@ -1,0 +1,28 @@
+name: 'loan_analytics'
+version: '1.0'
+config-version: 2
+
+profile: 'loan_analytics'
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+
+  loan_analytics:
+
+    staging:
+      +materialized: view
+      +schema: STAGING
+
+    intermediate:
+      +materialized: table
+      +schema: INTERMEDIATE
+
+    marts:
+      +materialized: table
+      +schema: MARTS

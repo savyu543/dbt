@@ -1,8 +1,0 @@
-version: 2
-
-sources:
-  - name: external_data
-    schema: DBT_SCHEMA
-    tables:
-      - name: test2
-        description: "External TEST2 table"
