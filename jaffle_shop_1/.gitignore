@@ -3,3 +3,8 @@ dbt_internal_packages/
 logs/
 target/
 .env
+
+# Private keys — never commit these
+*.PEM
+*.pem
+*.p8
